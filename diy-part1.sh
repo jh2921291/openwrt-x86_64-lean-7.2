@@ -13,3 +13,14 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+
+#!/bin/bash 添加ssrp
+git clone https://github.com/fw876/helloworld.git package/ssrp
+
+#!/bin/bash openclash
+git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+
+
+./scripts/feeds update -a
+./scripts/feeds install -a
